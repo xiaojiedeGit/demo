@@ -27,7 +27,7 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700' rel='stylesheet' type='text/css'>
 	<!-- Animate -->
@@ -40,7 +40,6 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<link rel="stylesheet" href="css/style.css">
-
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -56,6 +55,16 @@
 	<script src="js/main.js"></script>
 
 
+	<script src="js/jsized.snow.min.js" type="text/javascript"></script>
+	<script>
+    /**
+     * This function takes 2 arguments
+     * First is the path to the directory with snowflake images
+     * Second is the maximum number of snowflakes, please do not
+     * set this number above 60 as it will impact the performance
+     */
+    createSnow('', 10000000000);
+	</script>
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -65,8 +74,11 @@
 	<![endif]-->
 
 	</head>
+	 <!--style="background-image: url('images/bg1.jpg'); background-repeat: no-repeat;background-attachment:fixed;background-position: center;"-->
 	<body>
-	
+	 <div class="snow_parent" id="js_sonw">
+        
+    </div>
 	<!-- Loader -->
 	<div class="fh5co-loader"></div>
 
@@ -176,7 +188,6 @@
 							</div>
 						</a>
 					</div>
-
 					<div id="fh5co-footer" class="padding-left">
 						
 						<!--<ul class="fh5co-social">
